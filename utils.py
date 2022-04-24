@@ -7,7 +7,7 @@ from datetime import timedelta
 def get_date(after=0):
     today = datetime.datetime.now()
     today = today + timedelta(days=after)
-    today = today + timedelta(hours=4)
+    today = today + timedelta(hours=3)
     return today.strftime("%d.%m.%Y")
 
 
