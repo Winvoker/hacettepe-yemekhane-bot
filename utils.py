@@ -1,16 +1,19 @@
 import requests
 import xmltodict
-from datetime import date, timedelta
+import datetime
+from datetime import timedelta
 
 
 def get_date(after=0):
-    today = date.today()
-    today += timedelta(days=after)
+    today = datetime.datetime.now()
+    today = today + timedelta(days=after)
+    today = today + timedelta(hours=4)
     return today.strftime("%d.%m.%Y")
 
 
-string_to_send = ""
-print(get_date())
+def read_token():
+    with open("DISCORD_TOKEN", "r") as f:
+        return f.readline()
 
 
 def print_menu(menu):

@@ -1,7 +1,7 @@
 # This example requires the 'message_content' intent.
 
 import discord
-from utils import print_menu, update_yemekhane, get_date
+from utils import print_menu, update_yemekhane, get_date, read_token
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
@@ -17,20 +17,21 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith(".yemek") or message.content.startswith(".y"):
+    if message.content.startswith(".yemek"):
         if "yarın" in message.content:
             date = get_date(1)
         elif "dün" in message.content:
             date = get_date(-1)
         else:
             date = get_date()
-
+        print(message)
+        print(date)
         yemekhane = update_yemekhane()
 
-        msg = date + " tarihli yemek listesi:\n\n"
+        msg = date + "\n\n"
         msg += print_menu(yemekhane[date])
 
         await message.channel.send(msg)
 
 
-client.run("token")  #
+client.run(read_token())
