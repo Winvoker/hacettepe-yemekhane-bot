@@ -1,5 +1,3 @@
-# This example requires the 'message_content' intent.
-
 import discord
 from utils import print_menu, update_yemekhane, get_date, read_token
 
