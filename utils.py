@@ -16,6 +16,11 @@ def read_token():
         return f.readline()
 
 
+def read_channelID():
+    with open("channel_id", "r") as f:
+        return f.readline()
+
+
 def print_menu(menu):
     string_to_send = ""
     for i in menu[0]:
