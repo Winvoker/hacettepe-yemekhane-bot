@@ -35,7 +35,7 @@ python bot.py
 This project is licensed under the [MIT] License - see the LICENSE.md file for details
 
 ## TO-DO:
-* Make automatic announcement without calling with a command (.yemek)
+* ~~Make automatic announcement without calling with a command (.yemek)~~
 * Create docker image
 * Auto deploy on aws upon push.
 
