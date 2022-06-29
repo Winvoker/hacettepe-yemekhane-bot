@@ -1,3 +1,4 @@
+import json
 import requests
 import xmltodict
 import datetime
@@ -34,7 +35,6 @@ def update_yemekhane():
     response = requests.get(url)
     data = xmltodict.parse(response.content)
     data = data["gunler"]["gun"]
-
     yemekhane = {}
     for i in data:
         tarih = i["tarih"].split()[0]
