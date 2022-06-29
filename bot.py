@@ -21,7 +21,7 @@ db_bot = create_db()
 @tasks.loop(hours=24.0)
 async def auto_send():
     channel = await client.fetch_channel(read_channelID())
-    date = get_date(0)
+    date = get_date(1)
     if date[0] == '0':
         date = date[1:]
     
@@ -47,7 +47,7 @@ async def auto_save_db():
 async def on_ready():
     print(f"We have logged in as {client.user}")
     auto_save_db.start()
-    # auto_send.start()
+    auto_send.start()
 
 
 @client.event
