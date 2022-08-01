@@ -39,4 +39,4 @@ This project is licensed under the [MIT] License - see the LICENSE.md file for d
 * Create docker image
 * Auto deploy on aws upon push.
 
-All pull requests are welcome ! Please use flake8 and black before pushing your code.
+All pull requests are welcome ! Please use flake8 and black before PR.
