@@ -36,6 +36,7 @@ This project is licensed under the [MIT] License - see the LICENSE.md file for d
 
 ## TO-DO:
 * ~~Make automatic announcement without calling with a command (.yemek)~~
+* Write a signing system which users use a .kayit command to set a channel for automatic announcements.
 * Create docker image
 * Auto deploy on aws upon push.
 
