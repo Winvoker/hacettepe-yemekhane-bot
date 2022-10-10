@@ -3,6 +3,7 @@ import requests
 import xmltodict
 import datetime
 from datetime import timedelta
+from database import update_json
 
 
 def get_date(after=0):
@@ -35,7 +36,7 @@ def print_menu(menu):
     string_to_send = ""
     for i in menu[0]:
         string_to_send += "• " + i + "\n"
-    string_to_send += "Kalori:" + menu[1]
+    string_to_send += "\nKalori : " + menu[1]
     return string_to_send
 
 
@@ -50,4 +51,5 @@ def update_yemekhane():
         yemekler = i["yemekler"]["yemek"]
         kalori = i["kalori"]
         yemekhane[tarih] = [yemekler, kalori]
-    return yemekhane
+    updated_json = update_json(yemekhane)
+    return updated_json

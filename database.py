@@ -29,6 +29,7 @@ def update_json(new_json):
     old_json = load_json()
     updated_json = dict(old_json, **new_json)
     save_json(updated_json)
+    return updated_json
 
 
 def add_message(db, message):

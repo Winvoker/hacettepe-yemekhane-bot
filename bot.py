@@ -104,5 +104,25 @@ async def on_message(message):
                 "Bu kanal kayıtlı değil! Kayıt etmek için .hacettepe sign komutunu kullanabilirsiniz."
             )
 
+    if message.content.startswith(".yemek"):
+        if "yarın" in message.content:
+            date = get_date(1)
+        elif "dün" in message.content:
+            date = get_date(-1)
+        else:
+            date = get_date()
+
+        if date[0] == "0":
+            date = date[1:]
+
+        print(message)
+        print(date)
+        yemekhane = update_yemekhane()
+
+        msg = date + "\n\n"
+        msg += print_menu(yemekhane[date])
+
+        await message.channel.send(msg)
+
 
 client.run(read_token())
