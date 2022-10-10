@@ -1,7 +1,9 @@
 # Hacettepe Yemekhane Bot
 
 This discord bot shows which foods will be served at Hacettepe dining hall.
-Add to your server. [link](https://discord.com/oauth2/authorize?client_id=966733779647471686&permissions=2048&scope=bot)
+
+You can add to your server. [link](https://discord.com/oauth2/authorize?client_id=966733779647471686&permissions=2048&scope=bot)
+
 ## How to use bot
 * .yemek : Gives list of today's menu.
 * .yemek yarın : Gives list of tommorow's menu.
