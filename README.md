@@ -6,6 +6,8 @@ This discord bot shows which foods will be served at Hacettepe dining hall.
 * .yemek : Gives list of today's menu.
 * .yemek yarın : Gives list of tommorow's menu.
 * .yemek dün : Gives list of yesterday's menu.
+* .hacettepe sign : Sign spesific channel to get automated messages every day at 20:00. 
+* .hacettepe unsign : Unsign channel
 ## Getting Started
 
 ### Dependencies
@@ -36,7 +38,7 @@ This project is licensed under the [MIT] License - see the LICENSE.md file for d
 
 ## TO-DO:
 * ~~Make automatic announcement without calling with a command (.yemek)~~
-* Write a signing system which users use a .kayit command to set a channel for automatic announcements.
+* ~~Write a signing system which users use a .kayit command to set a channel for automatic announcements.~~
 * Create docker image
 * Auto deploy on aws upon push.
 
