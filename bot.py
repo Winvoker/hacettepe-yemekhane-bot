@@ -26,8 +26,6 @@ async def send_yemek_message(message):
     if date[0] == "0":
         date = date[1:]
 
-    print(message)
-    print(date)
     yemekhane = update_yemekhane()
 
     msg = date + "\n\n"
@@ -115,8 +113,6 @@ async def on_message(message):
         if date[0] == "0":
             date = date[1:]
 
-        print(message)
-        print(date)
         yemekhane = update_yemekhane()
 
         msg = date + "\n\n"
