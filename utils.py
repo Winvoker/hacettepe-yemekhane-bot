@@ -22,6 +22,15 @@ def read_channelID():
         return f.readline()
 
 
+def read_channelIDs():
+
+    with open("channel_id", "r") as f:
+        channel_ids = f.readlines()
+    channel_ids = [i.strip("\n") for i in channel_ids]
+
+    return channel_ids
+
+
 def print_menu(menu):
     string_to_send = ""
     for i in menu[0]:
