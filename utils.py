@@ -35,6 +35,8 @@ def read_channelIDs():
 def print_menu(menu):
     string_to_send = ""
     for i in menu[0]:
+        if i == None:
+            continue
         string_to_send += "• " + i + "\n"
     string_to_send += "\nKalori : " + menu[1]
     return string_to_send
