@@ -165,5 +165,8 @@ async def on_message(message):
     if message.content.startswith(".deniz"):
         await message.channel.send("tamamdır 👍")
 
+    if message.content.startswith(".tristy"):
+        await message.channel.send("güneşe aşığım")
+
 
 client.run(read_token())
