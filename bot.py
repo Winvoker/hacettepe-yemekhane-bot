@@ -125,48 +125,4 @@ async def on_message(message):
             "Hacettepe Üniversitesi'nin resmi olmayan Discord botu. Yemek listesini görmek için .yemek komutunu kullanabilirsiniz."
         )
 
-    if message.content.startswith(".ceren"):
-        await message.channel.send("aka elen tepes. emrenin karısı.")
-    if message.content.startswith(".emre"):
-        await message.channel.send("aka sei tepes. cerenin kocası.")
-
-    if message.content.startswith(".batu"):
-        await message.channel.send("🤙🤙")
-
-    if message.content.startswith(".bobo"):
-        await message.channel.send(":flag_tr: :flag_tr:")
-
-    if message.content.startswith(".lülü"):
-        await message.channel.send("💖💖 Savaş seni cok seviyomus iletmemi istedi 💖💖")
-    if message.content.startswith(".savaş"):
-        await message.channel.send("💖💖 Lülü seni cok seviyomus iletmemi istedi 💖💖")
-
-    if message.content.startswith(".sude"):
-        await message.channel.send("Lütfen kızma ama tarzını beğenmiyorum.")
-
-    if message.content.startswith(".eda"):
-        await message.channel.send("did you mean seda?")
-
-    if message.content.startswith(".mako"):
-        await message.channel.send("Merhaba ben 01'liyim. Tanısalım mı?")
-
-    if message.content.startswith(".altar"):
-        await message.channel.send("31starwars31")
-
-    if message.content.startswith(".cem"):
-        await message.channel.send("Congrats on being tall bro.")
-
-    if message.content.startswith(".guş"):
-        await message.channel.send("😔")
-
-    if message.content.startswith(".irem"):
-        await message.channel.send("💖 777 manifestliyorum 777 💖")
-
-    if message.content.startswith(".deniz"):
-        await message.channel.send("tamamdır 👍")
-
-    if message.content.startswith(".tristy"):
-        await message.channel.send("güneşe aşığım")
-
-
 client.run(read_token())
